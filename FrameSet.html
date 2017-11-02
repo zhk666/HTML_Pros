@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FrameSet</title>
+</head>
+    <!-- FrameSet 不能在body中设置 -->
+    <!-- cols让框架基于横向的方式切分
+         rows让框架竖向划分   -->
+    <!-- 直接使用frameset标签不用frame包裹-->
+    <frameset rows="80,*,80" border="1">
+        <frame src="test_html/01.html">
+        <frameset cols="80,*">
+            <frame src="test_html/04.html">
+            <frame src="test_html/02.html" name="context">
+        </frameset>
+        <frame src="test_html/03.html">
+    </frameset>
+<body>
+
+</body>
+</html>
